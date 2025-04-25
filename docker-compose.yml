@@ -9,13 +9,13 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./migration/docker-database-initial.sql:/docker-entrypoint-initdb.d/docker-database-initial.sql   
+      - ./migration/docker-database-initial.sql:/docker-entrypoint-initdb.d/docker-database-initial.sql
 
   pgadmin-compose:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "gui@alura.com"
-      PGADMIN_DEFAULT_PASSWORD: "123456"
+      PGADMIN_DEFAULT_EMAIL: "alexandrebaiocco@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "alexandrebaiocco"
     ports:
       - "54321:80"
     depends_on:
