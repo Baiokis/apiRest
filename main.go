@@ -1,6 +1,7 @@
 package main
 
 import (
+	"apiRest/database"
 	"apiRest/models"
 	"apiRest/routes"
 	"fmt"
@@ -13,6 +14,7 @@ func main() {
 		{Id: 3, Nome: "Isaac Newton", Historia: "Físico e matemático, formulou as leis do movimento e a lei da gravitação universal."},
 	}
 
+	database.DatabaseConnect()
 	fmt.Println("Iniciando o servidor Rest com Go")
 	routes.HandleResquest()
 }
