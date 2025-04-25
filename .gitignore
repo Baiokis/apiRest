@@ -12,6 +12,4 @@
 go.work
 go.work.sum
 
-docker-compose.yml
-
 .env
